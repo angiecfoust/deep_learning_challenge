@@ -1,10 +1,10 @@
 # Deep Learning Challenge
 <br>
-## Background/Challenge Information
+<h2>Background/Challenge Information</h2><br>
 The nonprofit foundation Alphabet Soup wants a tool that can help it select the applicants for funding with the best chance of success in their ventures. Using my knowledge of machine learning and neural networks, I used the features in the provided dataset to create a binary classifier that can predict whether applicants will be successful if funded by Alphabet Soup. The overall goal was to create a model with at least 75% accuracy.
 <br>
 <br>
-## Process
+<h2>Process</h2><br>
 After loading the data set into a Pandas DataFrame (using Google Colab), I performed the following preprocessing steps to prepare the data:
 * determined the target variable (IS_SUCCESSFUL) and features
 * dropped unnecessary columns (EIN and NAME)
@@ -15,15 +15,15 @@ After loading the data set into a Pandas DataFrame (using Google Colab), I perfo
 Once the data was prepared, I used Keras/TensorFlow to set up a model and define layers. From there the model was compiled, trained, evaluated, and finally exported to an HDF5 file. Subsequent to creating this nuearl network, three attempts were made to improve the accuracy score manually (i.e. choosing on my own which changes to make to both the data set and the Keras model) before opting to run a Keras Tuner to auto-optimize the model. Lastly, I created a final model then compiled, trained, and evaluated the model before exporting to an HDF5 file.
 <br>
 <br>
-## Results
+<h2>Results</h2><br>
 Below is a description and breakdown of the results for each of the included files/neural networks.
 <br>
 <b>Starter_Code</b>: This was the first predictive model; the specifics for preprocessing are listed above in the Process section.
-* Model/Layer details:
-  - Activation: Relu, 80 neurons, 43 input dimensions
-  - Hidden Layer: Relu, 30 neurons
-  - Output Layer: Sigmoid, 1 neuron
-  - 100 epochs
+  * Model/Layer details:
+    - Activation: Relu, 80 neurons, 43 input dimensions
+    - Hidden Layer: Relu, 30 neurons
+    - Output Layer: Sigmoid, 1 neuron
+    - 100 epochs
 * Results:
   - Accuracy: 0.729329
   - Loss: 0.56
@@ -97,6 +97,6 @@ Below is a description and breakdown of the results for each of the included fil
   - Target accuracy not achieved; Is an improved model, but not significantly so.
 <br>
 <br>
-## Summary
+<h2>Summary</h2><br>
 Unfortunately none of the 5 models created met the 75% accuracy target, however, Keras Tuner was utilized and did come up with a model that resulted in slightly higher accuracy. My recommendation would be to continue making adjustments to the preprocessing to further improve the predictive model.
 
