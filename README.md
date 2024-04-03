@@ -18,18 +18,18 @@ Once the data was prepared, I used Keras/TensorFlow to set up a model and define
 <h2>Results</h2><br>
 Below is a description and breakdown of the results for each of the included files/neural networks.
 <br>
-<b>Starter_Code</b>: This was the first predictive model; the specifics for preprocessing are listed above in the Process section.
-  * Model/Layer details:
-    - Activation: Relu, 80 neurons, 43 input dimensions
-    - Hidden Layer: Relu, 30 neurons
-    - Output Layer: Sigmoid, 1 neuron
-    - 100 epochs
+<b>Starter_Code</b>: This was the first predictive model; the specifics for preprocessing are listed above in the Process section.<br>
+* Model/Layer details:<br>
+    		- Activation: Relu, 80 neurons, 43 input dimensions<br>
+    		- Hidden Layer: Relu, 30 neurons<br>
+    		- Output Layer: Sigmoid, 1 neuron<br>
+    		- 100 epochs<br>
 * Results:
-  - Accuracy: 0.729329
-  - Loss: 0.56
-  - Target accuracy not achieved
+  		- Accuracy: 0.729329<br>
+  		- Loss: 0.56<br>
+  		- Target accuracy not achieved<br>
 <br>
-<b>AlphabetSoupCharity_Optimization_1</b>: This was the first attempt to improve on the original model.
+<b>AlphabetSoupCharity_Optimization_1</b>: This was the first attempt to improve on the original model.<br>
 * Preprocessing Changes:
   - Two additional columns were dropped from the dataset- ORGANIZATION, SPECIAL_CONSIDERATIONS
   - Binning cutoffs were adjusted for APPLICATION_TYPE and CLASSIFICATION columns- < 1000 and < 2000, respectively.
@@ -44,7 +44,7 @@ Below is a description and breakdown of the results for each of the included fil
   - Loss: 0.58
   - Target accuracy not achieved; Not an improved model
 <br>
-<b>AlphabetSoupCharity_Optimization_2</b>: This was the second attempt to improve on the original model.
+<b>AlphabetSoupCharity_Optimization_2</b>: This was the second attempt to improve on the original model.<br>
 * Preprocessing Changes:
   - One additional columns was dropped from the dataset- INCOME_AMT
   - Binning cutoffs were adjusted to < 4000 for the CLASSIFICATION column
@@ -58,7 +58,7 @@ Below is a description and breakdown of the results for each of the included fil
   - Loss: 0.566
   - Target accuracy not achieved; This is a slightly improved model
 <br>
-<b>AlphabetSoupCharity_Optimization_3</b>: This was the final "manual" attempt to improve on the original model.
+<b>AlphabetSoupCharity_Optimization_3</b>: This was the final "manual" attempt to improve on the original model.<br>
 * Preprocessing Changes:
   - Three additional columns were dropped from the dataset- ORGANIZATION, SPECIAL_CONSIDERATIONS, INCOME_AMT
 * Model/Layer details:
@@ -72,7 +72,7 @@ Below is a description and breakdown of the results for each of the included fil
   - Loss: 0.57
   - Target accuracy not achieved; Not an improved model
 <br>
-<b>Keras_Tuner_Check</b>: As the previous attempts failed to reach the target accuracy, I opted to use Keras Tuner to define the optimal model.
+<b>Keras_Tuner_Check</b>: As the previous attempts failed to reach the target accuracy, I opted to use Keras Tuner to define the optimal model.<br>
 * Preprocessing Changes:
   - None; the original data preprocessing was used
 * Top Identified Model/Layer details:
